@@ -40,5 +40,5 @@
 const myfunction= function(){
     console.log("hello");
 }
-myfunction()
-console.log(typeof myfunction);
+myfunction()                                                 
+
