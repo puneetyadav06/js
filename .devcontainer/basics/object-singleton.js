@@ -23,11 +23,11 @@ let regularuser={
 let obj1={1:"a",2:"b"}
 let obj2={3:"a",4:"b"}
 let obj3={4:"a",5:"b"}
-// let allobj={obj1,obj2} // output:{ obj1: { '1': 'a', '2': 'b' }, obj2: { '1': 'a', '2': 'b' } }
-// let object1=Object.assign(obj1,obj2) //Oject.assign is use two merge the object ;note: there will a conduction if the value of obj1 or obj2 are same they can show only a unique value 
+let allobj={obj1,obj2} // output:{ obj1: { '1': 'a', '2': 'b' }, obj2: { '1': 'a', '2': 'b' } }
+let object1=Object.assign(obj1,obj2) //Oject.assign is use two merge the object ;note: there will a conduction if the value of obj1 or obj2 are same they can show only a unique value 
 // console.log(object1);
 
-// let object2=Object.assign({},obj1,obj2,obj3) //note:{}target use obj1,obj2,obj3 to store in {} but your not give the target value then they will use obj1 to store the all object.
+let object2=Object.assign({},obj1,obj2,obj3) //note:{}target use obj1,obj2,obj3 to store in {} but your not give the target value then they will use obj1 to store the all object.
 let object3={...obj1, ...obj2, ...obj3}
 // console.log(object3);
 
@@ -55,11 +55,33 @@ let user=[
     }
 ]
 user[1].email
-console.log(chatup);
-console.log(Object.keys(chatup));
-console.log(Object.values(chatup));
-console.log(Object.entries(chatup)); // enteries: show the object values in array [key][values]
-console.log(chatup.hasOwnProperty('name')); // hasOwnProperty: to check the value inside the object
+// console.log(chatup);
+// console.log(Object.keys(chatup));
+// console.log(Object.values(chatup));
+// console.log(Object.entries(chatup)); // enteries: show the object values in array [key][values]
+// console.log(chatup.hasOwnProperty('name')); // hasOwnProperty: to check the value inside the object
 
+//-------------de-structureing object----------
 
+let course={
+    coursename:"js",
+    price:999,
+    courseInstructor:"puneet"
+}
 
+// course.courseInstructor
+let {courseInstructor,coursename,price}=course
+// console.log(courseInstructor);
+// console.log(coursename);
+// console.log(price);
+
+let {courseInstructor: Instructor}=course // this decleration is know as de-structureing
+// console.log(Instructor);
+
+//-------rect destructureing------------------
+/*
+let navbar=({company})=>{
+
+// }
+navbar(company="puneet")
+*/
