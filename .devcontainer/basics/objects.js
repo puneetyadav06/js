@@ -20,7 +20,7 @@ let user= {
     }
 }
 
-// console.log(user.name);
+console.log(user.name);
 // console.log(user.age);
 //  console.log( user["email"]);
 // console.log(user.location);

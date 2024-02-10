@@ -45,10 +45,10 @@ let dc=["batman","superman","flash"]
 // console.log(marvel);
 //console.log(marvel[3][1]);
 
-// let all=marvel.concat(dc) note:only perform two values
+// let all=marvel.concat(dc) //.concat is use to merge two array into a single array or object ;note:only perform two values
 // console.log(all);
 
-// const allhero=[...marvel,...dc] //note:only perform multiple values into single array
+// const allhero=[...marvel,...dc] //note:only perform multiple array values into single array
 // console.log(allhero);
 
 // let another =[1,2,3,[4,5,6],7,[5,6,7,[9,10]],8]
