@@ -21,7 +21,7 @@ function add(number1,number2) {  //parameter
     let result= number1+number2;
     return result  
 }
-let result = add(4,5)
+// let result = add(4,5)
 // console.log("result:", result);
 
 
