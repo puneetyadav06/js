@@ -48,17 +48,19 @@ let dc=["batman","superman","flash"]
 // let all=marvel.concat(dc) note:only perform two values
 // console.log(all);
 
-// const allhero=[...marvel,...dc] note:only perform multiple values
+// const allhero=[...marvel,...dc] //note:only perform multiple values into single array
 // console.log(allhero);
 
 // let another =[1,2,3,[4,5,6],7,[5,6,7,[9,10]],8]
-// let real_array=another.flat(Infinity)
+// let real_array=another.flat(Infinity) // its use to marge multiple inner dimensional array convert in single array 
 // console.log(real_array);
 
-console.log(Array.isArray("puneet"))
-console.log(Array.from("puneet"))
-console.log(Array.from({name:"puneet"}))  //interesting
-let score1=100
-let score2=200
-let score3=300
-console.log(Array.of(score1,score2,score3));
+
+// console.log(Array.isArray("puneet")); //it return boolean value in this case ans is false
+// console.log(Array.isArray([2,3,4]))//it return boolean value in this case ans is false
+// console.log(Array.from("puneet"))
+// console.log(Array.from({name:"puneet"}))  //interesting
+// let score1=100
+// let score2=200
+// let score3=300
+// console.log(Array.of(score1,score2,score3));
