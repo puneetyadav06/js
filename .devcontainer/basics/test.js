@@ -4,7 +4,7 @@
 // var accountPassword="12345"
 // accountCity="mathura"
 // let accountState;
-// console.log();
+// console.log( );
 
 
 let a={
@@ -15,5 +15,5 @@ accountCity:"mathura",
 accountState: "",
 }
 
-console.table(a);
-// console.table([accountId,accountEmail,accountPassword,accountCity,accountState])
+console.table(a);// in this table print in two value format [index][value] [variable][value] 
+// console.table([accountId,accountEmail,accountPassword,accountCity,accountState])// in this table print in two value format [index][value] [index number][value] 
