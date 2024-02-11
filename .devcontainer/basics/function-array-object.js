@@ -9,7 +9,7 @@ function calculateCarPrice(val1,val2, ...num1){
     return val1,val2,num1
 }
 
-// console.log(calculateCarPrice(200,300,400,500,600));
+//  console.log(calculateCarPrice(200,300,400,500,600));
 
 let user ={
     username:"puneet",
@@ -20,6 +20,9 @@ function handleobject(anyobject){
     // console.log(`username is ${anyobject.username} and price is ${anyobject.price}`);
 }
 handleobject(user)
+
+
+
 handleobject({
     username:"sam",
     price:300
