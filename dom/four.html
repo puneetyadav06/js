@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>code with puneet</title>
+</head>
+<body style="background-color: black;color: white;">
+    <ul class="language">
+        <li>javascript</li>
+
+    </ul>
+    <ol class="orderlist">
+        <li>html</li>
+        
+    </ol>
+
+    <ol class="orderlisttwo">
+        <li>c</li>
+        
+    </ol>
+</body>
+<script>
+    function addlanguage(langname){
+        const li=document.createElement('li');
+        li.innerHTML=`${langname}`
+        document.querySelector(".language").appendChild(li)
+    };
+    addlanguage("python")
+    addlanguage("node.js")
+    addlanguage("react.js")
+    addlanguage("android")
+
+    function addlanguageone(languageone){
+        const li=document.createElement('li');
+        li.appendChild(document.createTextNode(languageone));
+        document.querySelector('.orderlist').appendChild(li)
+    };
+  addlanguageone("css")
+  addlanguageone("xml")
+
+  function addlanguagetwo(languagetwo){
+        const li=document.createElement('li');
+        li.appendChild(document.createTextNode(languagetwo));
+        document.querySelector('.orderlisttwo').appendChild(li)
+    };
+  addlanguagetwo("c++")
+  addlanguagetwo("java")
+ 
+
+    function addoptilanguage(langname){
+        const li=document.createElement('li');
+        li.appendChild(document.createTextNode(langname))
+        document.querySelector('.language').appendChild(li)
+    };
+    addoptilanguage("go language")
+
+    //edit
+    
+    const secondlanguage=document.querySelector("ol li:nth-child(2)");
+    secondlanguage.innerHTML="mojo"
+    const threelanguage=document.querySelector("ul li:nth-child(3)");
+    threelanguage.innerHTML="fofo"
+    const fourlanguage=document.querySelector("ol.orderlisttwo li:nth-child(3)")
+    fourlanguage.innerHTML="koko"
+</script>
+</html>
