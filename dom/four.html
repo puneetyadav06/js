@@ -10,6 +10,10 @@
         <li>javascript</li>
 
     </ul>
+    <ul class="languagetwo">
+        <li>ai</li>
+        <li>ml</li>
+    </ul>
     <ol class="orderlist">
         <li>html</li>
         
@@ -21,7 +25,7 @@
     </ol>
 </body>
 <script>
-    function addlanguage(langname){
+    function addlanguage(langname){ //normal approch
         const li=document.createElement('li');
         li.innerHTML=`${langname}`
         document.querySelector(".language").appendChild(li)
@@ -31,7 +35,7 @@
     addlanguage("react.js")
     addlanguage("android")
 
-    function addlanguageone(languageone){
+    function addlanguageone(languageone){ //company approach
         const li=document.createElement('li');
         li.appendChild(document.createTextNode(languageone));
         document.querySelector('.orderlist').appendChild(li)
@@ -46,6 +50,13 @@
     };
   addlanguagetwo("c++")
   addlanguagetwo("java")
+
+  function addlanguagefour(lanuagethree){
+    const li=document.createElement('li');
+    li.appendChild(document.createTextNode(lanuagethree));
+    document.querySelector('.languagetwo').appendChild(li);
+  }
+  addlanguagefour("dip")
  
 
     function addoptilanguage(langname){
@@ -57,11 +68,27 @@
 
     //edit
     
-    const secondlanguage=document.querySelector("ol li:nth-child(2)");
-    secondlanguage.innerHTML="mojo"
+    const secondlanguage=document.querySelector("ol.orderlist  li:nth-child(2)");
+    // secondlanguage.innerHTML="mojo"
     const threelanguage=document.querySelector("ul li:nth-child(3)");
-    threelanguage.innerHTML="fofo"
+    // threelanguage.innerHTML="fofo"
     const fourlanguage=document.querySelector("ol.orderlisttwo li:nth-child(3)")
-    fourlanguage.innerHTML="koko"
+    // fourlanguage.innerHTML="koko"
+    const fivelanguage=document.querySelector("ul.languagetwo li:nth-child(3)")
+    // fivelanguage.innerHTML="daa"
+
+     //edit another method
+    const newli=document.createElement('li')
+    newli.textContent="coding"
+    secondlanguage.replaceWith(newli)
+    //edit
+    const firstLang = document.querySelector("li:first-child")
+    firstLang.outerHTML = '<li>TypeScript</li>'
+
+    //remove
+    const lastLang = document.querySelector('li:last-child')
+    lastLang.remove()
+
+
 </script>
 </html>
