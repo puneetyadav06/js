@@ -23,6 +23,11 @@
         <li>c</li>
         
     </ol>
+     
+    <ol class="student">
+        <li>puneet</li>
+        <li>sumit</li>
+    </ol>
 </body>
 <script>
     function addlanguage(langname){ //normal approch
@@ -66,6 +71,13 @@
     };
     addoptilanguage("go language")
 
+    function addlanguagefive(languagefive){
+        const li=document.createElement('li')
+        li.appendChild(document.createTextNode(languagefive))
+        document.querySelector('.student').appendChild(li)
+    }
+    addlanguagefive("lol")
+
     //edit
     
     const secondlanguage=document.querySelector("ol.orderlist  li:nth-child(2)");
@@ -76,6 +88,9 @@
     // fourlanguage.innerHTML="koko"
     const fivelanguage=document.querySelector("ul.languagetwo li:nth-child(3)")
     // fivelanguage.innerHTML="daa"
+    const six=document.querySelector("ol.student li:nth-child(3)");
+    six.innerHTML="sidak"
+
 
      //edit another method
     const newli=document.createElement('li')

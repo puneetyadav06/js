@@ -14,27 +14,28 @@
     div.id=Math.round(Math.random()*10 +1);
     div.setAttribute("title","generated title")
     div.style.backgroundColor="green"
-    div.style.padding="10px"
-    // div.innerText="code with puneet";
-    const addtext=document.createTextNode("code with puneet")
-    div.appendChild(addtext);
+    div.style.padding="10px 10px 10px 10px"
+    div.innerText="code with puneet";
+    // const addtext=document.createTextNode("code with puneet")
+    // div.appendChild(addtext);
     document.body.appendChild(div)
 
-   var divone=document.createElement('divone')
+   const divone=document.createElement('divone')
     console.log(divone);
     divone.id="loop"
     divone.style.backgroundColor="blue";
     divone.style.color="yellow"
     divone.innerText="mern developer\n"
-    divone.style.padding="10px";
+    divone.style.padding="10px 20px 20px 20px";
     
     for (var i = 1; i <=5; i++) {
         console.log(i)
-        addtextone=i;    
+        // addtextone=i;    
     }
     // divone.innerText=i;
-    var addtextone=document.createTextNode("\n loops print")
+    var addtextone=document.createTextNode(`${i} : loops `)
     divone.appendChild(addtextone);
+    // divone.appendChild(addtextone);
     document.body.appendChild(divone)
 
 
