@@ -39,44 +39,72 @@
     // clientX, clientY, screenX, screenY
     // altkey, ctrlkey, shiftkey, keyCode
 
-document.getElementById('owl').addEventListener('click',function(e){
+// *****************note************************
+// timestamp(): time is first add date() then use the timestamp to use display to show the time .
+
+// document.getElementById('owl').addEventListener('click',function(e){
     // console.log(e);
 //     const timestamp=new Date();
 //     console.log(timestamp);
-});
+// });
 
 
-// note:by default system use capturing and by default false is also  it upon to programmer to write or not .
-//capturing:-
-document.getElementById('images').addEventListener('click',function (e) {
-    // console.log("clicked inside the ul");
-},false);
-document.getElementById('owl').addEventListener('click',function (e) {
-    // console.log("owl clicked!");
-},false);
+// *****************note************************
+// capturing:- note: by default system use capturing and by default false is also  it upon to programmer to write or not .
+//capturing:- 1.print second then first
 
-//bubbling:-
-document.getElementById('images').addEventListener('click',function (e) {
-    // console.log("clicked inside the ul");
-},true);
-document.getElementById('owl').addEventListener('click',function (e) {
-    // console.log("owl clicked!");
-},true);
+// document.getElementById('images').addEventListener('click',function (e) {
+//     console.log("clicked inside the ul");
+//     e.stopPropagation;
+// },false);
+// document.getElementById('owl').addEventListener('click',function (e) {
+//     console.log("owl clicked!");
+//     e.stopPropagation()
+// },false);
 
+
+// *****************note************************
+//bubbling:- note: if you click on owl pic then the both parameter are print and if u click the other pic then outer print+1; 1.print first then second 
+
+// document.getElementById('images').addEventListener('click',function (e) {
+//     console.log("clicked inside the ul");
+// },true);
+// document.getElementById('owl').addEventListener('click',function (e) {
+//     console.log("owl clicked!");
+// },true);
+
+// *****************note************************
+// 1.preventDefault(); // stop the working to any open or link then history+1;
+//  2.stopPropagation() //one error then opeen google
+
+// document.getElementById('google').addEventListener('click',function(e){
+//            e.preventDefault();
+//         e.stopPropagation() //one error then opeen google
+//         console.log("google clicked");
+//     }, false)
+   
+
+
+// *****************note************************
 //type note:"event type" 
+
 // const button =document.getElementById('mybutton');
 // button.addEventListener('click',function(e){
 //     console.log("Event type:-",e.type);
-// })
+// });
 
+// *****************note************************
 //defualtPrevent note:"event type" 
-const button =document.getElementById('mybutton');
-button.addEventListener('click',function(e){
-    e.preventDefault();
-    // console.log("defaultPrevented:-",e.defaultPrevented);
-});
 
-//target note:target value match then change the event.
+// const button =document.getElementById('mybutton');
+// button.addEventListener('click',function(e){
+//     e.preventDefault();
+    // console.log("defaultPrevented:-",e.defaultPrevented);
+// });
+
+// *****************note************************
+// target note:target value match then change the event.
+
 // const cbutton =document.getElementById('mybutton');
 // cbutton.addEventListener('click',function(e){ 
 //     if(e.target.matches("#mybutton")){
