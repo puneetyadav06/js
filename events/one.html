@@ -37,7 +37,40 @@
     // type, timestamp, defaultPrevented
     // target, toElement, currentTarget,
     // clientX, clientY, screenX, screenY
-    // altkey, ctrlkey, shiftkey 
+    // altkey, ctrlkey, shiftkey // click to screen and help like keyword keys.
+    // exercise
+    
+// =======================================exercise===========================================
+//type note:"event type" 
+
+// const button =document.getElementById('mybutton');
+// button.addEventListener('click',function(e){
+//     console.log("Event type:-",e.type);
+// });
+
+// *****************note************************
+//defualtPrevent note:"event type" 
+
+// const button =document.getElementById('mybutton');
+// button.addEventListener('click',function(e){
+//     e.preventDefault();
+    // console.log("defaultPrevented:-",e.defaultPrevented);
+// });
+
+// *****************note************************
+// target note:target value match then change the event.
+
+// const cbutton =document.getElementById('mybutton');
+// cbutton.addEventListener('click',function(e){ 
+//     if(e.target.matches("#mybutton")){
+//         console.log("button is clicked");
+//         const para=document.getElementById('para');
+//         para.textContent="button click by user";
+//     }
+// });
+// 
+// =======================================exercise===========================================
+
 
 // *****************note************************
 // timestamp(): time is first add date() then use the timestamp to use display to show the time .
@@ -85,33 +118,19 @@
    
 
 
-// *****************note************************
-//type note:"event type" 
-
-// const button =document.getElementById('mybutton');
-// button.addEventListener('click',function(e){
-//     console.log("Event type:-",e.type);
-// });
-
-// *****************note************************
-//defualtPrevent note:"event type" 
-
-// const button =document.getElementById('mybutton');
-// button.addEventListener('click',function(e){
-//     e.preventDefault();
-    // console.log("defaultPrevented:-",e.defaultPrevented);
-// });
-
-// *****************note************************
-// target note:target value match then change the event.
-
-// const cbutton =document.getElementById('mybutton');
-// cbutton.addEventListener('click',function(e){ 
-//     if(e.target.matches("#mybutton")){
-//         console.log("button is clicked");
-//         const para=document.getElementById('para');
-//         para.textContent="button click by user";
-//     }
-// });
+// ===========project style=======
+// to remove image in list one by one on click
+document.querySelector('#images').addEventListener('click', function(e){
+        console.log(e.target.tagName);
+        if (e.target.tagName === 'IMG') {
+            console.log(e.target.id);
+            let removeIt = e.target.parentNode
+            removeIt.remove()
+        }
+    
+        
+    })
+    
+    //removeIt.parentNode.removeChild(removeIt)
 </script>
 </html>
