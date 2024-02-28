@@ -20,7 +20,10 @@
    </div>
    <div>
     <input type="button" id="mybutton" value="clicked!">
-    <p id="para"></p>
+    <p id="para">you click the button </button></p>
+   </div>
+   <div>
+    <input type="button" id="twobutton" value="submit">
    </div>
 
 </body>
@@ -73,15 +76,14 @@ button.addEventListener('click',function(e){
     // console.log("defaultPrevented:-",e.defaultPrevented);
 });
 
-
-const cbutton =document.getElementById('mybutton');
-cbutton.addEventListener('click',function(e){
-    
-    if(e.target.matches("#mybutton")){
-        console.log("button is clicked");
-        const para=document.getElementById('para');
-        para.textContent="you clicked" + e.target.tagName + ".puneet"
-    }
-});
+//target note:target value match then change the event.
+// const cbutton =document.getElementById('mybutton');
+// cbutton.addEventListener('click',function(e){ 
+//     if(e.target.matches("#mybutton")){
+//         console.log("button is clicked");
+//         const para=document.getElementById('para');
+//         para.textContent="button click by user";
+//     }
+// });
 </script>
 </html>
