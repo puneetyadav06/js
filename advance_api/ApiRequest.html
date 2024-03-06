@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>code with puneet</title>
+</head>
+<body style="background-color: black; color: white;">
+
+    
+</body>
+<script>
+    const requestUrl='https://api.github.com/users/puneetyadav06'
+    const nhr = new XMLHttpRequest()
+    nhr.open('GET',requestUrl)
+    nhr.onreadystatechange=function(){
+        console.log(nhr.readyState);
+        if (nhr.readyState === 4) {
+            const data=JSON.parse(this.responseText);
+            console.log(typeof data);
+            console.log(data.followers);
+
+            
+        }
+    }
+    // console.log(nhr.readyState);
+    nhr.send();
+</script>
+</html>
