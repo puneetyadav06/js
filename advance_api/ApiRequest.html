@@ -8,22 +8,25 @@
 <body style="background-color: black; color: white;">
 
     
+    
 </body>
 <script>
-    const requestUrl='https://api.github.com/users/puneetyadav06'
-    const nhr = new XMLHttpRequest()
-    nhr.open('GET',requestUrl)
-    nhr.onreadystatechange=function(){
-        console.log(nhr.readyState);
-        if (nhr.readyState === 4) {
-            const data=JSON.parse(this.responseText);
-            console.log(typeof data);
-            console.log(data.followers);
+    // const requestUrl='https://api.github.com/users/puneetyadav06'
+    // const nhr = new XMLHttpRequest()
+    // nhr.open('GET',requestUrl)
+    // nhr.onreadystatechange=function(){
+    //     console.log(nhr.readyState);
+    //     if (nhr.readyState === 4) {
+    //         const data=JSON.parse(this.responseText);
+    //         console.log(typeof data);
+    //         console.log(data.followers);
 
             
-        }
-    }
-    // console.log(nhr.readyState);
-    nhr.send();
+    //     }
+    // }
+    // // console.log(nhr.readyState);
+    // nhr.send();
+
+
 </script>
 </html>
